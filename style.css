@@ -34,6 +34,18 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+/* Root Variables */
+:root {
+    --dark-gray: #1E1E1E;
+    --white: #ffffff;
+    --teal: #4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57; 
+    --pink: #D9526F;
+}
+
+/* Global Styles (mobile first to small) */
 body {
 	line-height: 1;
 }
@@ -53,18 +65,7 @@ table {
 	border-spacing: 0;
 }
 
-/* Root Variables */
-:root {
-    --dark-gray: #1E1E1E;
-    --white: #ffffff;
-    --teal: #4CA7C0;
-    --purple: #484FB7;
-    --lavender: #6B8FE7;
-    --yellow: #E9BB57; 
-    --pink: #D9526F;
-}
-
-/* Global Styles (mobile first to small) */
+/* My CSS */
 
 body {
 	font-family: 'Inter', sans-serif;
@@ -72,7 +73,7 @@ body {
 	color: var(--white);
 	text-align: center;
 	max-width: 450px;
-	/* Figure out how to get the whole thing in the center*/
+	margin: 0 auto;
 }
 
 header, main, footer {
@@ -87,8 +88,18 @@ h1 {
 	font-size: 3em;
 }
 
+header {
+	padding: 45px;
+}
+
+header p {
+	padding-top: 15px;
+	font-style: italic;
+}
+
 nav {
 	background-color: var(--yellow);
+	padding: 20px
 }
 
 
@@ -96,7 +107,80 @@ nav h2 {
 	font-family: 'Inter', sans-serif;
 	font-size: 1.5em;
 	color: var(--dark-gray);
-	/* Add text styling */
+	font-weight: bold;
+	font-style: italic;
+}
+
+nav ul li {
+	padding: 15px;
+	font-weight: bold;
+	color: var(--purple);
+	text-transform: uppercase;
+	background-color: var(--white);
+	margin: 10px
+}
+
+body section {
+	text-align: left;
+	margin: 20px;
+	border-radius: 10px;
+}
+
+section:has(img, h4, p)  {
+	background-color: var(--white);
+}
+
+section h2 {
+	font-size: 2em;
+	background-color: var(--purple);
+}
+
+section h3 {
+	font-size: 1.5em;
+	color: var(--yellow);
+	font-weight: bold;
+	background-color: var(--purple);
+}
+
+section h4 {
+	font-size: 1.15em;
+	color: var(--purple);
+	font-weight: bold;
+	padding-left: 30px;
+}
+
+section p {
+	color: var(--dark-gray);
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	line-height: 25px;
+}
+
+section img {
+	padding: 20px;
+}
+
+section:has(ul li) h2 {
+	background-color: var(--pink);
+}
+
+section h2~ul li {
+	background-color: var(--pink);
+	margin: 20px;
+}
+
+section:has(ul li) h2 {
+	background-color: var(--pink);
+}
+
+
+
+
+
+section:has(h2 p button) {
+	background-color: var(--pink);
 }
 
 
