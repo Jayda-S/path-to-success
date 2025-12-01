@@ -88,6 +88,24 @@ h1 {
 	font-size: 3em;
 }
 
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+	color: var(--yellow);
+	font-weight: bold;
+	background-color: var(--purple);
+}
+
+h4 {
+	font-size: 1.15em;
+	color: var(--purple);
+	font-weight: bold;
+	padding-left: 30px;
+}
+
 header {
 	padding: 45px;
 }
@@ -101,7 +119,6 @@ nav {
 	background-color: var(--yellow);
 	padding: 20px
 }
-
 
 nav h2 {
 	font-family: 'Inter', sans-serif;
@@ -130,24 +147,6 @@ section:has(img, h4, p)  {
 	background-color: var(--white);
 }
 
-section h2 {
-	font-size: 2em;
-	background-color: var(--purple);
-}
-
-section h3 {
-	font-size: 1.5em;
-	color: var(--yellow);
-	font-weight: bold;
-	background-color: var(--purple);
-}
-
-section h4 {
-	font-size: 1.15em;
-	color: var(--purple);
-	font-weight: bold;
-	padding-left: 30px;
-}
 
 section p {
 	color: var(--dark-gray);
@@ -162,25 +161,174 @@ section img {
 	padding: 20px;
 }
 
-section:has(ul li) h2 {
+#chooseUs {
 	background-color: var(--pink);
+	padding-bottom: 15px;
+	border-radius: 0%;
+	margin: 0 0 20px 0;
+	padding: 20px;
 }
 
-section h2~ul li {
-	background-color: var(--pink);
-	margin: 20px;
+#chooseUs ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+	
+	text-align: center;
+	font-weight: bolder;
+	font-size: 1.25em;
+	color:var(--dark-gray);
+	column-gap: 15px;
 }
 
-section:has(ul li) h2 {
-	background-color: var(--pink);
+#personalized-results {
+	background: var(--teal);
+	border-radius: 20px;
+	padding: 40px;
+	margin: 15px 10px;
 }
 
-
-
-
-
-section:has(h2 p button) {
-	background-color: var(--pink);
+#proven-results {
+	background: var(--lavender);
+	border-radius: 20px;
+	padding: 40px 40px;
+	margin: 0 10px 0 0;
 }
 
+#supportive-environment{
+	background: var(--yellow);
+	border-radius: 20px;
+	padding: 40px;
+	margin: 0px 10px;
+}
 
+#flexible-options {
+	background: var(--white);
+	border-radius: 20px;
+	padding: 40px 40px;
+	margin: 0 10px 0 0;
+}
+
+#pricing h3 {
+	padding: 10px 20px;
+}
+
+#pricing table {
+	margin: 0 auto;
+}
+
+#one-on-one th {
+	color: var(--dark-gray);
+	font-size: 1em;
+	font-weight: bolder;
+	text-align: center;
+	background-color: var(--yellow);
+	border: 1px solid var(--yellow);
+	padding: 15px;
+}
+
+#one-on-one td {
+	color: var(--dark-gray);
+	font-size: 1em;
+	background-color: var(--white);
+	border: 1px solid var(--yellow);
+	padding: 15px 20px;
+	text-align: center;
+}
+
+#group-coaching th {
+	color: var(--dark-gray);
+	font-size: 1em;
+	font-weight: bolder;
+	text-align: center;
+	background-color: var(--yellow);
+	border: 1px solid var(--yellow);
+	padding: 15px;
+}
+
+#group-coaching td {
+	color: var(--dark-gray);
+	font-size: 1em;
+	background-color: var(--white);
+	border: 1px solid var(--yellow);
+	padding: 15px 20px;
+	text-align: center;
+}
+
+#workshops-seminars th {
+	color: var(--dark-gray);
+	font-size: 1em;
+	font-weight: bolder;
+	text-align: center;
+	background-color: var(--yellow);
+	border: 1px solid var(--yellow);
+	padding: 15px;
+}
+
+#workshops-seminars td {
+	color: var(--dark-gray);
+	font-size: 1em;
+	background-color: var(--white);
+	border: 1px solid var(--yellow);
+	padding: 15px 20px;
+	text-align: center;
+}
+
+#online-courses th {
+	color: var(--dark-gray);
+	font-size: 1em;
+	font-weight: bolder;
+	text-align: center;
+	background-color: var(--yellow);
+	border: 1px solid var(--yellow);
+	padding: 15px;
+}
+
+#online-courses td {
+	color: var(--dark-gray);
+	font-size: 1em;
+	background-color: var(--white);
+	border: 1px solid var(--yellow);
+	padding: 15px 20px;
+	text-align: center;
+}
+
+#firstStep {
+	background-color: var(--pink);
+	padding: 20px;
+	margin: 0 0 20px 0;
+	border-radius: 0%;
+	display: block;
+	text-align: left;
+}
+
+#firstStep p {
+	color: var(--white);
+}
+
+#firstStep a {
+	display: block;
+	text-decoration: none;
+	background-color: var(--white);
+	color: var(--dark-gray);
+	font-weight: bold;
+	padding: 30px;
+	text-align: center;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px var(--dark-gray);
+}
+
+footer {
+	background-color: var(--purple);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 60px 0;
+	align-items: center;
+	justify-items: center;
+}
+
+footer p, footer a {
+	color: var(--white);
+}
